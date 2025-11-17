@@ -1,4 +1,4 @@
-🧭 Data role halaman, masing2 satu orang
+🧭 Data role halaman, 1 orang dapat masing2 satu halaman
 
 |HOME : Nopal
 |ABOUT : Farras
@@ -9,10 +9,14 @@ Tema:
 
 Greentech (teknologi ramah lingkungan)
 
-- paduan wanra:
+Judul: Go Green
+
+paduan wanra:
 
   --primary-color: white;
   --netral-green: #00a63e;
   --light-green: #f0fdf4;
   --kinda-dark-green: #0b883e;
   --text-color: #7d7d7d;
+  --navbar-color: #2f4454;
+  --accent: #f1c40f;

@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Go Green - Kontak & Lokasi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/css/contact.css" />
   </head>
   <body>
@@ -11,20 +15,429 @@
 
     <nav>
       <div class="logo">
-        <img src="assets/img/logo.png" alt="GreenTech Logo" />
+        <img src="assets/img/logo.png" alt="logo" />
         <div class="logo-text">
-          <span class="span1">Green Pulse</span>
-          <span class="span2">Your life will be green</span>
+          <a href="home.html">GreenPulse</a>
+          <span>imagine a safety green</span>
         </div>
       </div>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
       <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
 
     <!-- END Navigation Bar -->
+
+    <!-- Header dengan background alam -->
+    <header>
+      <div class="header-overlay"></div>
+      <div class="container">
+        <div class="hero">
+          <h1>Hubungi Kami</h1>
+          <p>
+            Mari bersama-sama menjaga bumi untuk masa depan yang lebih hijau
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Section Kontak -->
+      <section class="contact-section">
+        <div class="section-header">
+          <h2>Informasi Kontak</h2>
+          <p>Jangan ragu untuk menghubungi kami untuk informasi lebih lanjut</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="card-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Alamat Kami</h3>
+              <p>
+                Jl. Hijau Lestari No. 123<br />Kota Ekologi, Indonesia 12345
+              </p>
+            </div>
+
+            <div class="contact-card">
+              <div class="card-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3>Telepon</h3>
+              <p>+62 21 1234 5678</p>
+              <p>+62 21 8765 4321</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="card-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email</h3>
+              <p>info@gogreen.org</p>
+              <p>support@gogreen.org</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="card-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3>Website & Media Sosial</h3>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <div class="form-header">
+              <h3>Kirim Pesan</h3>
+              <p>Isi formulir di bawah ini dan kami akan segera merespons</p>
+            </div>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="name" name="name" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subjek</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-tag"></i>
+                  <input type="text" id="subject" name="subject" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-comment"></i>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i>
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Go Green - Peta Lokasi</title>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <!-- Section Peta dengan Iframe -->
+      <section class="map-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Lokasi Kami</h2>
+            <p>Kunjungi kantor pusat Go Green untuk informasi lebih lanjut</p>
+          </div>
+
+          <div class="map-container">
+            <!-- Peta dengan Iframe Google Maps -->
+            <div class="iframe-map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.81956135063986!3d-6.194966395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1633033220015!5m2!1sid!2sid"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="google-map-iframe"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+
+              <!-- Overlay controls untuk peta -->
+              <div class="map-controls">
+                <button class="map-btn" id="zoomIn">
+                  <i class="fas fa-plus"></i>
+                </button>
+                <button class="map-btn" id="zoomOut">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button class="map-btn" id="currentLocation">
+                  <i class="fas fa-location-arrow"></i>
+                </button>
+                <button class="map-btn" id="fullscreen">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+
+              <!-- Loading indicator -->
+              <div class="map-loading">
+                <div class="loading-spinner"></div>
+                <p>Memuat peta...</p>
+              </div>
+            </div>
+
+            <!-- Informasi lokasi -->
+            <div class="map-info">
+              <div class="info-header">
+                <h3>
+                  <i class="fas fa-map-marker-alt"></i> Kantor Pusat Go Green
+                </h3>
+                <div class="rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">4.9 (128 reviews)</span>
+                </div>
+              </div>
+
+              <div class="info-details">
+                <div class="info-item">
+                  <i class="fas fa-clock"></i>
+                  <div>
+                    <strong>Jam Operasional</strong>
+                    <p>Senin - Jumat: 08:00 - 17:00</p>
+                    <p>Sabtu: 09:00 - 15:00</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <strong>Alamat</strong>
+                    <p>
+                      Jl. Hijau Lestari No. 123<br />Kota Ekologi, Indonesia
+                      12345
+                    </p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <strong>Telepon</strong>
+                    <p>+62 21 1234 5678</p>
+                    <p>+62 21 8765 4321</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <i class="fas fa-car"></i>
+                  <div>
+                    <strong>Parkir</strong>
+                    <p>Parkir luas tersedia</p>
+                    <p>Gratis untuk pengunjung</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <a href="#" class="direction-btn">
+                  <i class="fas fa-directions"></i>
+                  Petunjuk Arah
+                </a>
+                <a href="#" class="contact-btn">
+                  <i class="fas fa-phone"></i>
+                  Hubungi Kami
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional map features -->
+          <div class="map-features">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-tree"></i>
+              </div>
+              <h4>Lingkungan Hijau</h4>
+              <p>Kantor kami dikelilingi oleh area hijau dan taman yang asri</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-bicycle"></i>
+              </div>
+              <h4>Akses Sepeda</h4>
+              <p>Fasilitas parkir sepeda yang aman untuk pengunjung</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-bus"></i>
+              </div>
+              <h4>Akses Transportasi</h4>
+              <p>Mudah dijangkau dengan transportasi umum</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-wheelchair"></i>
+              </div>
+              <h4>Akses Difabel</h4>
+              <p>Fasilitas ramah difabel tersedia</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal untuk peta fullscreen -->
+      <div id="mapModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Peta Lokasi Go Green</h3>
+            <button class="close-modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.81956135063986!3d-6.194966395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1633033220015!5m2!1sid!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Galeri -->
+      <section class="gallery-section">
+        <div class="section-header">
+          <h2>Galeri Kegiatan Kami</h2>
+          <p>Beberapa momen dari kegiatan pelestarian lingkungan Go Green</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Penanaman Pohon"
+            />
+            <div class="gallery-overlay">
+              <h3>Penanaman Pohon</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/img/pantai.jpg" alt="Pembersihan Pantai" />
+            <div class="gallery-overlay">
+              <h3>Pembersihan Pantai</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Edukasi Lingkungan"
+            />
+            <div class="gallery-overlay">
+              <h3>Edukasi Lingkungan</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="logo-footer">
+            <img src="assets/img/logo.png" alt="logo" />
+            <div class="logo-text">
+              <span>GreenPulse</span>
+              <span>imagine a safety green</span>
+            </div>
+          </div>
+          <p>
+            Bersama kita jaga bumi untuk masa depan yang lebih hijau dan
+            berkelanjutan.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Program Kami</h3>
+          <ul>
+            <li><a href="#">Penanaman Pohon</a></li>
+            <li><a href="#">Pembersihan Lingkungan</a></li>
+            <li><a href="#">Edukasi Lingkungan</a></li>
+            <li><a href="#">Konservasi Air</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Tautan Cepat</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Kontak</h3>
+          <ul class="contact-info">
+            <li>📍 Jl. Hijau Lestari No. 123</li>
+            <li>📞 +62 21 1234 5678</li>
+            <li>✉️ info@gogreen.org</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Go Green. Semua Hak Dilindungi.</p>
+      </div>
+    </footer>
+
+    <!-- End footer section -->
+
+    <!-- js ketika navbar discroll muncul nayangan -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector("nav");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <!-- Humberger -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

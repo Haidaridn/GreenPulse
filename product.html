@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/css/product.css" />
   </head>
   <body>
@@ -11,20 +15,201 @@
 
     <nav>
       <div class="logo">
-        <img src="assets/img/logo.png" alt="GreenTech Logo" />
+        <img src="assets/img/logo.png" alt="logo" />
         <div class="logo-text">
-          <span class="span1">Green Pulse</span>
-          <span class="span2">Your life will be green</span>
+          <a href="home.html">GreenPulse</a>
+          <span>imagine a safety green</span>
         </div>
       </div>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
       <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
 
     <!-- END Navigation Bar -->
+
+    <!-- Header -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Green Machine Tree & Landscaping</h1>
+        <p>Sustainable rides for a cleaner, brighter tomorrow</p>
+        <div class="hero-buttons">
+          <a href="#product" class="btn btn-primary">See more</a>
+          <a href="contact.html" class="btn btn-secondary">Next page</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- END header -->
+
+    <!-- Product Section -->
+    <section id="product" class="products">
+      <div class="container">
+        <h2>Produk Sepeda Listrik</h2>
+        <p class="section-desc">
+          Temukan sepeda listrik terbaik yang menggabungkan teknologi, gaya, dan
+          efisiensi untuk mobilitas Anda.
+        </p>
+
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <img src="assets/img/urbanx.png" alt="sepeda-urbanx" />
+            <div class="product-info">
+              <h3>UrbanX GT GE-1</h3>
+              <span class="product-category">Urban Series</span>
+              <div class="product-rating">★★★★★</div>
+              <p>
+                Kecepatan maksimal 5 km/jam, jarak tempuh 60–70 km, dan 6 varian
+                warna stylish. Cocok untuk mobilitas perkotaan yang praktis dan
+                ramah lingkungan.
+              </p>
+              <ul class="product-features">
+                <li>✔ Baterai lithium 36V</li>
+                <li>✔ Rem cakram depan & belakang</li>
+                <li>✔ Lampu LED hemat energi</li>
+              </ul>
+              <div class="product-price">Rp 6.500.000</div>
+              <a href="rincian-product.html" class="btn">Rincian Produk</a>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <img src="assets/img/product2.png" alt="GT FLASH" />
+            <div class="product-info">
+              <h3>GT FLASH</h3>
+              <span class="product-category">Sport Series</span>
+              <div class="product-rating">★★★★☆</div>
+              <p>
+                Desain elegan dengan warna hitam dan struktur kokoh. Kecepatan 5
+                km/jam dan jarak tempuh 55 km, ideal untuk perjalanan harian.
+              </p>
+              <ul class="product-features">
+                <li>✔ Rangka baja ringan</li>
+                <li>✔ Mode eco & turbo</li>
+                <li>✔ Anti-slip grip</li>
+              </ul>
+              <div class="product-price">Rp 5.900.000</div>
+              <a href="rincian-product2.html" class="btn">Rincian Produk</a>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <img src="assets/img/product3.png" alt="GT GF-1" />
+            <div class="product-info">
+              <h3>GT GF-1</h3>
+              <span class="product-category">Daily Series</span>
+              <div class="product-rating">★★★★★</div>
+              <p>
+                Sepeda harian dengan fitur modern, kecepatan 5 km/jam dan jarak
+                tempuh 60–70 km. Nyaman untuk pelajar dan pekerja.
+              </p>
+              <ul class="product-features">
+                <li>✔ Port USB charger</li>
+                <li>✔ Jok ergonomis</li>
+                <li>✔ Sistem keamanan ganda</li>
+              </ul>
+              <div class="product-price">Rp 6.200.000</div>
+              <a href="rincian-product3.html" class="btn">Rincian Produk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Product Section -->
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="logo-footer">
+            <img src="assets/img/logo.png" alt="logo" />
+            <div class="logo-text">
+              <span>GreenPulse</span>
+              <span>imagine a safety green</span>
+            </div>
+          </div>
+          <p>
+            Bersama kita jaga bumi untuk masa depan yang lebih hijau dan
+            berkelanjutan.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Program Kami</h3>
+          <ul>
+            <li><a href="#">Penanaman Pohon</a></li>
+            <li><a href="#">Pembersihan Lingkungan</a></li>
+            <li><a href="#">Edukasi Lingkungan</a></li>
+            <li><a href="#">Konservasi Air</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Tautan Cepat</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Kontak</h3>
+          <ul class="contact-info">
+            <li>📍 Jl. Hijau Lestari No. 123</li>
+            <li>📞 +62 21 1234 5678</li>
+            <li>✉️ info@gogreen.org</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Go Green. Semua Hak Dilindungi.</p>
+      </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- End footer section -->
+
+    <!-- js ketika navbar discroll muncul nayangan -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector("nav");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <!-- Humberger -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
