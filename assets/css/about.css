@@ -393,7 +393,6 @@ nav.scrolled {
   z-index: 1001;
 }
 
-/* Responsive untuk layar kecil */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -402,21 +401,26 @@ nav.scrolled {
   .nav-links {
     position: absolute;
     top: 70px;
-    right: 0;
+    right: 20px;
     background-color: white;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
     width: 200px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-    opacity: 1; /* pastikan tetap terlihat */
-    animation: none; /* nonaktifkan animasi desktop */
+
+    /* 💡 HILANG TANPA GESER */
+    opacity: 0;
+    transform: scale(0.95); /* sedikit mengecil → lebih smooth */
+    pointer-events: none; /* tidak bisa diklik saat hidden */
+
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
   .nav-links.active {
-    transform: translateX(0);
+    opacity: 1;
+    transform: scale(1); /* kembali normal */
+    pointer-events: auto;
   }
 
   .nav-links a {
@@ -674,14 +678,94 @@ nav.scrolled {
   color: #ccc;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
+/* =======================================================
+   📱 RESPONSIVE ABOUT PAGE — FULL OPTIMIZATION
+========================================================= */
+
+/* Tablet — 900px ke bawah */
+@media (max-width: 900px) {
+  .about-home {
+    padding: 70px 2rem;
   }
 
-  .social-icons {
-    justify-content: center;
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  /* Hilangkan RTL supaya tidak kacau */
+  .about-container.reverse {
+    direction: ltr;
+  }
+
+  /* Gambar dipindahkan ke atas */
+  .about-image {
+    order: -1;
+  }
+
+  .about-image img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about-content .section-title {
+    font-size: 2rem;
+  }
+
+  .about-content .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-btn {
+    padding: 0.7rem 1.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile — 600px ke bawah */
+@media (max-width: 600px) {
+  .about-home {
+    padding: 60px 1.2rem;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  .about-content .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .about-btn {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 40px;
+  }
+}
+
+/* Extra Small Mobile — 430px ke bawah */
+@media (max-width: 430px) {
+  .about-content .section-title {
+    font-size: 1.6rem;
+  }
+
+  .about-content .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .about-text {
+    font-size: 0.88rem;
   }
 }
